@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# The Math Minute
+![Alt Text](https://media.giphy.com/media/SzQR7PEtXRiM0nwazt/giphy.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt Text](https://media.giphy.com/media/3ohhwmwQeE02iwwUg0/giphy.gif)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+THe clock is ticking ! ! ! How many zany math problems can you rack up before the clock runs out ! ! ! 
 
-### `yarn start`
+The idea for this app was to create an arithmetic game for my son who is six years old.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When I was in school I did a game called “The Mad Minute” which helped with memorization of the basics over calculation.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+RULES OF THE GAME : :
 
-### `yarn test`
+The instructor would start a timer for 60 seconds and the goal of the game is to complete all questions or answer as many questions as possible.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> The below is to illustrate the ORIGINAL layout of the game but as long as you preserve the overall concept feel free to get creative. 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](https://github.com/OsheaRD/MathMinute/blob/master/public/img/mad%20minute%20original.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![alt text](https://github.com/OsheaRD/MathMinute/blob/master/public/img/Math%20minute%20layout%20idea%201.pdf)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Requirements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You must use React.js and Redux in order to manage the state of a frontend application.
+using react-redux is highly recommended, but not a hard requirement
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application must contain at least 6 React components.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Organize components into separate files and import / export using es6 modules
+In general it should be "one component per file"
+There can be exceptions to this; use your best judgment on code organization
 
-## Learn More
+You must have at least 5 separate Redux action types.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+At least one component must use local state and not participate in the Redux state management
+Tip: pick a small component with some trivial, ephemeral state for this
+When in doubt, store things in your Redux store
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+At least one component must use a lifecycle method like: componentDidMount, componentWillUnmount, etc...
+ 
+ ## Tech Stack
+ 
+![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)&nbsp;
+![HTML](https://img.shields.io/badge/-HTML-333333?style=flat&logo=HTML5)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap&logoColor=563D7C)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributor
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Team Member  | Role
+------------ | -------------
+Oshea Deans  | Dev. // Logic // Design
