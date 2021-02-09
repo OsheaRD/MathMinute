@@ -1,3 +1,5 @@
+// This is the landing page where user inputs name. 
+
 import React, { useState } from "react";
 import { Redirect } from "react-router";
 
@@ -38,7 +40,7 @@ const Form = () => {
     <div className="form">
       {redirectToHome && redirectMe()}
       <div className="form__container">
-        <h1>One Minute Math</h1>
+        <h1>The Math Minute</h1>
         <form onSubmit={submitHandler}>
           <input
             type="text"

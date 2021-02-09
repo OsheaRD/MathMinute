@@ -58,14 +58,14 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center; }
-  .home__heading {
+  .game__title {
     width: 80%;
     height: 3rem;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(to right bottom, #1f791c, #b1ed97);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
-    color: #7962e7; }
+    color: white; }
   .home__game-details {
     margin-top: 1rem;
     width: 80%;
@@ -105,7 +105,7 @@ body {
       width: 2rem;
       height: 2rem; }
   .home__questions-single {
-    width: 15%;
+    width: 10%;
     height: 10rem;
     background: linear-gradient(to right bottom, #7962e7, #8c73ec);
     border-radius: 1rem;
@@ -119,8 +119,9 @@ body {
     width: 20%; }
 
 .bigger {
-  width: 12.5rem !important;
-  height: 12.5rem !important; }
+  width: 10.5rem !important;
+  height: 10.5rem !important;
+  background: linear-gradient(to right bottom, #1f791c, #b1ed97) }
 
 .row {
   width: 100%;

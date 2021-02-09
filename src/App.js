@@ -1,6 +1,11 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import AppRouter from "./AppRouter";
+
+
+
+
+// All content will come from the AppRouter imported above
 
 function App() {
   return (
@@ -13,12 +18,4 @@ function App() {
 export default App;
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1> Something</h1>
-//     </div>
-//   );
-// }
 
-// export default App;

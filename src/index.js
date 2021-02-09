@@ -12,15 +12,26 @@ if (process.env.NODE_ENV !== "development") {
   console.warn = () => {};
 }
 
+// Reducer to hold current and high score
+
 const allReducers = combineReducers({
   highest_user_score: scoresReducer,
   active_user_score: activePlayerReducer,
 });
 
+// allReducers defined above.
+
 const store = createStore(
   allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+
+
+// The <Provider /> makes the Redux store available to any nested components that have been wrapped in the connect() function.
+// Since any React component in a React Redux app can be connected, most applications will render a <Provider> at the top level, with the entire app’s component tree inside of it.
+// Normally, you can’t use a connected component unless it is nested inside of a <Provider>.
+
+// Thus store defined above.
 
 ReactDOM.render(
   <Provider store={store}>

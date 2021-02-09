@@ -1,25 +1,35 @@
+// BREAK INTO SMALLER COMPONENTS
+
 import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router";
 import tick from "../assets/tick.png";
 import cross from "../assets/cross.png";
+import Timekeeper from "../components/Timekeeper";
+import CurrentLevel from "../components/CurrentLevel";
+import GameTitle from "../components/GameTitle";
+
+// import { render } from "react-dom";
+
+
 
 const Home = (props) => {
   console.log(props.location.state.user_name);
 
-  let interval = null;
-  const [timer, setTimer] = useState(60);
+ 
   const [redirectToForm, setRedirectToForm] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [active, setActive] = useState(0);
   const [ans, setAns] = useState();
-  const [score, setScore] = useState(0);
+  // const [score, setScore] = useState(0);
+
+ 
+
 
   useEffect(() => {
     if (!props.location.state) setRedirectToForm(true);
 
-    updateTimer();
-
-    for (let i = 0; i < 5; i++) {
+// AMOUNT OF CARDS PER VIEW
+    for (let i = 0; i < 6; i++) {
       questions.push({
         a: Math.floor(Math.random() * (10 - 0) + 0),
         b: Math.floor(Math.random() * (10 - 0) + 0),
@@ -49,12 +59,7 @@ const Home = (props) => {
     setActive(active + 1);
   };
 
-  const updateTimer = () => {
-    setTimeout(() => {
-      setTimer(timer - 1);
-      updateTimer();
-    }, 1000);
-  };
+
 
   const redirectMe = () => {
     return <Redirect to="/" />;
@@ -62,19 +67,18 @@ const Home = (props) => {
   return (
     <div className="home">
       {redirectToForm && redirectMe()}
-      <div className="home__heading">
-        <h1>The Math Minute</h1>
+      <div className="game__title">
+        <div><GameTitle /></div>
       </div>
       <div className="home__game-details">
-        <h1>{timer} seconds</h1>
+        <div> <Timekeeper /></div>
         <div className="home__game-details__user">
           <div className="row">
             <h3>Player: </h3>
             <span> {props.location.state.user_name}</span>
           </div>
           <div className="row">
-            <h3>Level:</h3>
-            <span>1 - A</span>
+            <CurrentLevel />
           </div>
         </div>
       </div>
