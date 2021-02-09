@@ -1,7 +1,7 @@
 # The Math Minute
-![Alt Text](https://media.giphy.com/media/SzQR7PEtXRiM0nwazt/giphy.gif)
+![Alt Text](https://media.giphy.com/media/SzQR7PEtXRiM0nwazt/giphy.gif)![Alt Text](https://media.giphy.com/media/3ohhwmwQeE02iwwUg0/giphy.gif)
 
-![Alt Text](https://media.giphy.com/media/3ohhwmwQeE02iwwUg0/giphy.gif)
+
 
 ## Overview
 
