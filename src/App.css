@@ -61,6 +61,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center; 
+  
    }
   .game__title {
     width: 80%;
@@ -130,7 +131,8 @@ body {
 .row {
   width: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white; }
 
 .line {
   width: 60%;
@@ -150,3 +152,5 @@ body {
     justify-content: right;
     text-align: center;
     }
+
+ 

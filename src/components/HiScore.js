@@ -8,7 +8,7 @@ function HiScore() {
               <br></br>
               <h1> CURRENT SCORE : 00 </h1>
               <br></br>
-              <h1> HI SCORE : 24 </h1>
+              <h1> HI SCORE : 38 </h1>
         </div>
     )
 }

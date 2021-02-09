@@ -5,7 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import { scoresReducer, activePlayerReducer } from "./redux/reducers";
+// import reducer, { activePlayerReducer } from "./redux/reducers/reducers";
+import reducer from './redux/reducers/reducers';
 
 if (process.env.NODE_ENV !== "development") {
   console.log = () => {};
@@ -15,15 +16,17 @@ if (process.env.NODE_ENV !== "development") {
 // Reducer to hold current and high score
 
 const allReducers = combineReducers({
-  highest_user_score: scoresReducer,
-  active_user_score: activePlayerReducer,
+  // highest_user_score: scoresReducer,
+  // active_user_score: activePlayerReducer,
 });
 
 // allReducers defined above.
 
 const store = createStore(
-  allReducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+reducer
+
+  // allReducers,
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 

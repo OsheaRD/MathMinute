@@ -3,8 +3,7 @@ import React from 'react'
 function CurrentLevel() {
     return (
         <div>
-            <h3>Level: 1-A</h3>
-            
+            <h3> &nbsp;Level: 1-A</h3>
         </div>
     )
 }
