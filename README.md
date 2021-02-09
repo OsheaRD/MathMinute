@@ -5,24 +5,27 @@
 
 ## Overview
 
-THe clock is ticking ! ! ! How many zany math problems can you rack up before the clock runs out ! ! ! 
+The clock is ticking ! ! ! How many zany math problems can you rack up before the clock runs out ! ! ! 
 
 The idea for this app was to create an arithmetic game for my son who is six years old.  
 
-When I was in school I did a game called “The Mad Minute” which helped with memorization of the basics over calculation.
+When I was in school I did a game called “The Mad Minute” which helped with memorization of the basic math having to do over calculations.
 
 RULES OF THE GAME : :
 
 The instructor would start a timer for 60 seconds and the goal of the game is to complete all questions or answer as many questions as possible.
 
-> The below is to illustrate the ORIGINAL layout of the game but as long as you preserve the overall concept feel free to get creative. 
+> The below is an illustration of the ORIGINAL layout of the game.
 
 
 ## Screenshots
 
 ![alt text](https://github.com/OsheaRD/MathMinute/blob/master/public/img/mad%20minute%20original.png)
 
-![alt text](https://github.com/OsheaRD/MathMinute/blob/master/public/img/Math%20minute%20layout%20idea%201.pdf)
+
+## Original Prototype
+
+![alt text](https://github.com/OsheaRD/MathMinute/blob/master/public/img/Math%20Minute%20Prototype.png)
 
 
 ## Project Requirements
@@ -51,6 +54,7 @@ At least one component must use a lifecycle method like: componentDidMount, comp
 ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap&logoColor=563D7C)
 
+         #And many many more ! ! ! !
 
 ## Contributor
 
