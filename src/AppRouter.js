@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Form from "./screens/Form";
 import Home from "./screens/Home";
+import HiScore from "./components/HiScore";
 // import Title from "./screens/Title";
 
 const AppRouter = () => {
@@ -14,6 +15,11 @@ const AppRouter = () => {
 
         </Switch>
       </BrowserRouter>
+<div class="score__container">
+<HiScore /> 
+</div>
+
+    
     </div>
   );
 };

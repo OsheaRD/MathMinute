@@ -38,6 +38,7 @@ const Home = (props) => {
     }
     setQuestions([...questions]);
   }, []);
+  
 
   const changeHandler = (e) => {
     switch (e.target.name) {
@@ -57,6 +58,7 @@ const Home = (props) => {
     console.log(questions[active]);
     questions[active].ans = ans;
     setActive(active + 1);
+    // move to next card
   };
 
 
@@ -70,18 +72,22 @@ const Home = (props) => {
       <div className="game__title">
         <div><GameTitle /></div>
       </div>
+
       <div className="home__game-details">
         <div> <Timekeeper /></div>
+
         <div className="home__game-details__user">
           <div className="row">
             <h3>Player: </h3>
             <span> {props.location.state.user_name}</span>
           </div>
+
           <div className="row">
             <CurrentLevel />
           </div>
         </div>
       </div>
+      
       <div className="home__questions-outer">
         <i class="fas fa-angle-left" id="graph-btn-prev"></i>
         {questions.map((item, key) => (
@@ -103,7 +109,8 @@ const Home = (props) => {
                   type="number"
                   onChange={changeHandler}
                   name="ans"
-                  autofocus
+                  autoFocus
+                  //move to next question by pressing enter :D 
                 />
               </form>
             ) : (

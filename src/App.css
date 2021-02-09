@@ -2,8 +2,11 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   font-family: "Quicksand", sans-serif;
-  background: linear-gradient(to right bottom, #7962e7, #8c73ec);
-  height: 100vh; }
+  background: linear-gradient(to right bottom, #00180c, #013d1a);
+
+}
+
+
 
 *,
 *::after,
@@ -57,7 +60,8 @@ body {
   height: 100%;
   display: flex;
   flex-flow: column;
-  align-items: center; }
+  align-items: center; 
+   }
   .game__title {
     width: 80%;
     height: 3rem;
@@ -140,3 +144,9 @@ body {
   align-items: center; }
   .answer-container img {
     margin-left: -1.6rem; }
+
+  .hi__score{
+    color: white;
+    justify-content: right;
+    text-align: center;
+    }

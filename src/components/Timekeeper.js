@@ -12,7 +12,7 @@ const Timekeeper= () => {
         return () => {
          clearInterval(intervalRef.current);
         };
-       }, [])
+       } )
     
        return (
         <div>
