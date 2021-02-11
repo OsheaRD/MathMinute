@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router";
-import tick from "../assets/tick.png";
-import cross from "../assets/cross.png";
+import tick from "../images/tick.png";
+import cross from "../images/cross.png";
 import Timekeeper from "../components/Timekeeper";
 import CurrentLevel from "../components/CurrentLevel";
 import GameTitle from "../components/GameTitle";
@@ -19,7 +19,7 @@ const Home = (props) => {
 // We get that state variable as the first value in an array, which we can destructure and declare with const.
  
   const [redirectToForm, setRedirectToForm] = useState(false);
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState([]); // instanciate an empty questions array
   const [active, setActive] = useState(0);
   const [ans, setAns] = useState();
   const [score, setScore] = useState(0);
@@ -31,12 +31,12 @@ const Home = (props) => {
   useEffect(() => {
     if (!props.location.state) setRedirectToForm(true);
 
-// AMOUNT OF CARDS PER VIEW
-    for (let i = 0; i < 6; i++) {
-      questions.push({
-        a: Math.floor(Math.random() * (10 - 0) + 0),
-        b: Math.floor(Math.random() * (10 - 0) + 0),
-        ans: "",
+// Build an array of questions
+    for (let i = 0; i < 9; i++) {
+      questions.push({ //setup what gets pushed to array
+        a: Math.floor(Math.random() * (10 - 0) + 0), // 1st number
+        b: Math.floor(Math.random() * (10 - 0) + 0), // 2nd number
+        ans: "", // answer user inputs 
       });
     }
     setQuestions([...questions]);
@@ -54,7 +54,7 @@ const Home = (props) => {
     }
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = (e) => { // symphony of state mgmt
     e.preventDefault();
 
     console.log("submitting");
@@ -63,7 +63,7 @@ const Home = (props) => {
     setActive(active + 1);
     // move to next card
     setScore(score +1);
-    console.log("this is showing" + (setScore));
+    // console.log("this is showing" + (setScore));
   };
 
 
@@ -96,23 +96,23 @@ const Home = (props) => {
       <div className="home__questions-outer">
         <i class="fas fa-angle-left" id="graph-btn-prev"></i>
         {questions.map((item, key) => (
-          <div
-            className="home__questions-single"
-            // eslint-disable-next-line react/jsx-no-duplicate-props
-            className={
+          <div className={
               key === active
+              // determine className by determining if the "key" is active. Use the css classes below.
                 ? "home__questions-single bigger"
                 : "home__questions-single"
             }
+            //close className div / ternary
           >
+
             <span>{item.a}</span>
-            <span style={{ marginLeft: "-1rem" }}>+{item.b}</span>
+            <span style={{ marginLeft: "-1rem" }}>+{item.b}</span> 
             <div className="line"></div>
 
-            {key === active ? (
-              <form onSubmit={submitHandler}>
-                <input
-                  type="number"
+            {key === active ? ( 
+              <form onSubmit={submitHandler}> 
+                <input // onSubmit describes action when "enter is pressed"
+                  type="number" // only numbers as input allowed
                   onChange={changeHandler}
                   name="ans"
                   autoFocus
@@ -122,14 +122,12 @@ const Home = (props) => {
             ) : (
               item.ans.length > 0 && (
                 <div className="answer-container">
-                  {item.a + item.b === item.ans ? (
-                    <img src={tick} alt="" />
-                    //increment score somehow here 
-                    // && score = setScore + 1
+                  {item.a - item.b == item.ans ? ( // this is the calculation for addition
+                    <img src={tick} alt="" /> // correct symbol
                   ) : (
-                    <img src={cross} />
-                  )}
-                  <span>{item.ans}</span>
+                    <img src={cross} alt="" /> // incorrect
+                  )} 
+                  <span>{item.ans}</span> 
                 </div>
               )
             )}
