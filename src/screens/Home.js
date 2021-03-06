@@ -62,8 +62,8 @@ const Home = (props) => {
     questions[active].ans = ans;
     setActive(active + 1);
     // move to next card
-    setScore(score +1);
-    // console.log("this is showing" + (setScore));
+    setScore(score +1); // WHY NOT WORKING
+    console.log(setScore);
   };
 
 
@@ -96,7 +96,8 @@ const Home = (props) => {
       <div className="home__questions-outer">
         <i class="fas fa-angle-left" id="graph-btn-prev"></i>
         {questions.map((item, key) => (
-          <div className={
+          <div
+            className={
               key === active
               // determine className by determining if the "key" is active. Use the css classes below.
                 ? "home__questions-single bigger"

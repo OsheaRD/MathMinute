@@ -15,10 +15,10 @@ if (process.env.NODE_ENV !== "development") {
 
 // Reducer to hold current and high score
 
-const allReducers = combineReducers({
-  // highest_user_score: scoresReducer,
-  // active_user_score: activePlayerReducer,
-});
+// const allReducers = combineReducers({
+//   // highest_user_score: scoresReducer,
+//   // active_user_score: activePlayerReducer,
+// });
 
 // allReducers defined above.
 

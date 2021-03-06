@@ -1,4 +1,3 @@
-
 import "./App.css";
 import AppRouter from "./AppRouter";
 import Counter from "./components/Counter"
@@ -21,6 +20,3 @@ function App() {
 }
 
 export default App;
-
-
-
